@@ -60,6 +60,10 @@ module FFMPEG
     def calculate_aspect?
       self[:aspect].nil? && self[:resolution]
     end
+    
+    def convert_rotation(value)
+      ['-vf', value]
+    end
 
     def convert_video_codec(value)
       ["-vcodec", value]
