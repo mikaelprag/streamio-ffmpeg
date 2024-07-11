@@ -65,7 +65,7 @@ module FFMPEG
       ['-vf', value]
     end
     
-    def convert_muted
+    def convert_muted(value)
       ['-an']
     end
 
