@@ -64,6 +64,10 @@ module FFMPEG
     def convert_rotation(value)
       ['-vf', value]
     end
+    
+    def convert_muted
+      ['-an']
+    end
 
     def convert_video_codec(value)
       ["-vcodec", value]
